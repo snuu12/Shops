@@ -33,4 +33,8 @@ public class Shop {
     public String toString() {
         return "name: " + name+ ",  "  + "   address: " + address ;
     }
+
+
+
+
 }

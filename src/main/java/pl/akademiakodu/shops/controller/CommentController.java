@@ -16,7 +16,8 @@ public class CommentController {
 @PostMapping("/comments")
     public String create(@ModelAttribute Comment comment){
     commentRepository.save(comment);
-    return "redirect:/";
+    int id=comment.getShop().getId();
+    return "redirect:/shops/"+id;
 
 }
 
